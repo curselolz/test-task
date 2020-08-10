@@ -12,7 +12,6 @@ import { PATH } from 'frontend/core/configs'
 
 import * as selectors from 'frontend/redux/selectors'
 
-
 const AppComponent = ({ fetchAllImages }) => {
   useEffect(() => {
     fetchAllImages()
