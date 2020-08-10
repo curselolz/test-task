@@ -3,7 +3,7 @@ import { takeLatest, put } from 'redux-saga/effects';
 import * as actions from './actions';
 import data from '../../backend/data.json'
 
-function* fetchAllImages() {
+function* fetchAllImages({payload}) {
   try {
     const response = data;
     yield put(actions.getAllImages.success(response));

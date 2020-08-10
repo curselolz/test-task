@@ -12,9 +12,10 @@ import { PATH } from 'frontend/core/configs'
 
 import * as selectors from 'frontend/redux/selectors'
 
-const AppComponent = ({ fetchAllImages }) => {
+const AppComponent = ({ fetchAllImages, history }) => {
   useEffect(() => {
-    fetchAllImages()
+    fetchAllImages(history);
+    history.push('/photos')
   },[])
 
   return (
