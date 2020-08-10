@@ -1,6 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import {Row, Col } from 'antd'
 
 const Files = props => {
   return (
@@ -9,9 +7,4 @@ const Files = props => {
     </div>
   )
 }
-
-Files.propTypes = {
-
-}
-
 export default Files

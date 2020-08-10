@@ -50,7 +50,6 @@ export default createReducer(
       produce(state, (nextState) => {
         switch (payload) {
           case "size":
-            console.log(state.images);
             nextState.images = nextState.images.sort(compareSize);
             break;
           case "name":

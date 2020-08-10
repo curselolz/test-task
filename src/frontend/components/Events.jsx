@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 const Events = props => {
   return (
@@ -9,8 +8,5 @@ const Events = props => {
   )
 }
 
-Events.propTypes = {
-
-}
 
 export default Events

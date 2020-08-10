@@ -4,8 +4,7 @@ import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
 import { Button } from 'antd';
 import * as actions from 'frontend/redux/actions';
-import { Menu, Row, Col } from 'antd';
-import { api } from 'frontend/util';
+import { Row, Col } from 'antd';
 
 const PhotosHeader = ({sortBy}) => {
   return (
