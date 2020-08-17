@@ -1,13 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Layout } from "antd";
-import { Menu, Row, Col, Progress, Button } from 'antd';
+import { Menu } from 'antd';
 import { calcSize } from 'frontend/redux/selectors';
 import { nanoid } from "nanoid";
 import {NAV} from 'frontend/core/configs'
-import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
-import { MinusOutlined, PlusOutlined } from '@ant-design/icons';
 import { StyledCol, StyledRow, StyledStatistic } from "frontend/styles";
 
 const { Sider } = Layout;
@@ -41,11 +39,6 @@ const SidebarWrapper = ({ totalFileSize }) => {
     </Sider>
   );
 }
-
-SidebarWrapper.propTypes = {
-
-}
-
 
 const mapStateToProps = (state) => ({
   totalFileSize: calcSize(state),

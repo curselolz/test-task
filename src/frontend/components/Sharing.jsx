@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 const Sharing = props => {
   return (
@@ -7,10 +6,6 @@ const Sharing = props => {
       sharing
     </div>
   )
-}
-
-Sharing.propTypes = {
-
 }
 
 export default Sharing

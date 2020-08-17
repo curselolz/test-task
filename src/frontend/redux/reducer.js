@@ -2,7 +2,6 @@ import { createReducer } from 'redux-act';
 import produce from 'immer';
 import * as actions from './actions';
 import { compare, compareTimestamp, compareSize } from "./sort";
-var _ = require("lodash");
 
 const initialState = {
   images:[],

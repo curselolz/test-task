@@ -33,14 +33,13 @@ const ContentWrapper = ({
               filename: element.filename,
               url: element.url,
               size: decoded.length,
-              url: element.url,
             },
           ];
           processImageSize(responseWithSize);
         }
       });
     });
-  }, []);
+  }, [processImageSize]);
 
   return (
     <>
